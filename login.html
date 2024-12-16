@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="#" />
+    <title>Senac - Salão</title>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      body {
+        background-image: url(img/Leeloo.The.First.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      .login-container {
+        max-width: 400px;
+        margin: 100px auto;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .login-container h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      .login-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .login-button:hover {
+        background-color: #0056b3;
+      }
+      .forgot-password {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .forgot-password a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form id="loginForm" action="#" method="POST">
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+        <button type="submit" class="login-button">Entrar</button>
+        <div class="forgot-password">
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

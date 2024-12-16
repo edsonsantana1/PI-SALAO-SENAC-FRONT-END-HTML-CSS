@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="#" />
+    <title>Senac - Salão</title>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(img/christiann-koepke-WiE01mC9AtY-unsplash.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="menu-outer">
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index1.html">Home</a></li>
+          <li><a href="agendamento.html">Agendamento</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a class="menu-close" onClick="return true">
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </a>
+
+    <div class="fixedcallicon">
+      <i class="fa fa-whatsapp"></i><span class="hide">+55 81 91234 5678</span>
+    </div>
+    <div class="container">
+      <div class="logoarea">
+        <div class="intro">
+          <h1>
+            <span
+              class="smaller wow zoomIn"
+              data-wow-duration="2s"
+              data-wow-delay="0.5"
+              >Av. Visconde de Suassuna, 440, Santo Amaro, Recife, PE, BR</span
+            >
+            <span
+              class="big wow pulse"
+              data-wow-duration="1s"
+              data-wow-delay="0s"
+              >Forma e Estilo</span
+            >
+            <span
+              class="small wow fadeIn"
+              data-wow-duration="2s"
+              data-wow-delay="0.5s"
+              >- SALÃO SENAC -</span
+            >
+          </h1>
+        </div>
+      </div>
+      <div class="pagearea">
+        <h1 class="page-headline">Cadastro</h1>
+        <i class="iconstartitle textmagenta fa fa-star"></i>
+        <form id="customerForm" style="text-align: right; margin-top: 20px">
+          <div style="margin-bottom: 15px">
+            <label for="name">Nome Completo:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome"
+              style="width: 300px; padding: 8px"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu email"
+              style="width: 300px; padding: 8px"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="phone">Telefone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Seu telefone"
+              style="width: 300px; padding: 8px"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="dob">Data de Nascimento:</label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              style="width: 300px; padding: 8px"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="address">Endereço:</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="3"
+              placeholder="Seu endereço"
+              style="width: 300px; padding: 8px"
+              required
+            ></textarea>
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Sua senha"
+              style="width: 300px; padding: 8px"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirme sua senha"
+              style="width: 300px; padding: 8px"
+              required
+            />
+          </div>
+
+          <div style="position: relative; left: 50px; top: 50px">
+            <button
+              type="submit"
+              class="button"
+              style="
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+              "
+            >
+              Cadastrar
+            </button>
+          </div>
+        </form>
+      </div>
+      <script>
+        document
+          .getElementById("customerForm")
+          .addEventListener("submit", function (event) {
+            var password = document.getElementById("password").value;
+            var confirmPassword =
+              document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+              alert("As senhas não coincidem. Por favor, tente novamente.");
+              event.preventDefault(); // Impede o envio do formulário
+            }
+          });
+      </script>
+    </div>
+    <div class="clearfix"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="pull-left">&copy; Todos os direitos reservado.</div>
+        <div class="pull-right">
+          <div class="footericons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/nicescroll.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
